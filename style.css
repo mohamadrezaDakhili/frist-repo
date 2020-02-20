@@ -1,0 +1,92 @@
+/* font project */
+@font-face {
+    font-family: 'yekan'; 
+    src:url('font/yekan.ttf') format('truetype');     
+}
+/* set font in project */
+* {
+    font-family: "yekan";
+}
+/* set background */
+body{
+    color: white;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.box{
+    width: 21%;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(7%);
+}
+
+p {
+    margin: 60px 0px;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+/* size and background for input user name and password */
+.inputEditText {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color:white ;
+}
+
+/* place holder in input username and password */
+input,::placeholder {
+    direction: rtl;
+    font-size: 20px;
+    color: #f6f7f9;
+    outline: none;
+}
+
+/* margin for input inside form */
+form input{
+    margin-bottom: 70px;
+}
+
+/* button login */
+button {
+    width:100%;
+    padding: 18px 0px;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 26px;
+    border: transparent;
+    background-color:#1d89e4;
+    color: blanchedalmond;
+}
+
+/* span for text fotget password and remember me */
+.span {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/* hover for button login */
+button:hover {
+    background-color:#1d8ae496;
+}
+
+/* checkbox for remember me */
+input.inputCheckBox {
+   width: 15px;
+   height: 15px;
+   float: right;
+   margin-top: 6px;
+   color: #f6f7f9;
+}
